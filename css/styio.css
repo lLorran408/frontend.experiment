@@ -1,9 +1,23 @@
 /* para comentarios em css*/
+
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+/* Importa Font Awesome (fontawesome.com) */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* para comentarios em css*/
 * {
-    box-sizing: border-box;
-    outline: none;
+  box-sizing: border-box;
+  outline: none;
+  /* Definindo a fonte padrão do site */
 }
-html, body {
- font-family: sans-serif;
-    font-size: 16px;
+html,
+body {
+  font-family: roboto, Verdana, Geneva, Tahoma, sans-serif;
+    /*
+    A linha `font-size` abaixo define a unidade `rem`.
+    Assim, 1rem = 16px, .5rem = 8px  
+    */
+  font-size: 16px;
+
 }
