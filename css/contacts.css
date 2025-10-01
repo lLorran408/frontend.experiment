@@ -1,0 +1,67 @@
+#contact-form label {
+  display: block;
+  padding: 0 0 0.25rem 0.5rem;
+}
+
+#contact-form div {
+    margin-top: 1.5rem;
+}
+
+/* Todos os campos do formulário */
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    /* Use a mesma fonte e de mesmo tamanho do site para os campos */
+    font-family: inherit;
+    font-size: inherit;
+    padding: .5rem 1rem;
+    border: 1px solid red;
+    border-bottom: 3px solid red;
+    /* suaviza as boras */
+    border-radius: .35rem;
+    background-color: rgb(243, 114, 114);
+}
+
+/* Só imput e textarea */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+}
+
+/* Formulário inteiro */
+#contact-form {
+    padding: 1rem;
+    width: 100%;
+    max-width: 550px;    
+
+    /* Centraliza o bloco */
+    display: block;
+    margin: auto;
+}
+/* Só textarea */
+#contact-form textarea {
+    resize: vertical;
+    height: 6rem;
+}
+/* Somente o botão */
+#contact-form button {
+     /* proibe cliques no botão */
+    pointer-events: none;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: .5rem 1rem;
+}
+/* Só imput e textarea quando válidos */
+#contact-form input:valid
+#contact-form textarea:valid{
+    border: 1px solid green;
+    border-bottom: 3px solid green ;
+    background-color: rgb(5, 241, 5);
+}
+/* quando o formulário for válido libra o clique no botão */ 
+#contact-form:valid button {
+    pointer-events: all;
+    background-color: steelblue;
+    cursor: pointer;
+}
